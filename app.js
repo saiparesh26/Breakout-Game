@@ -54,7 +54,7 @@ for(let i=0 ; i<bricksRowCount ; i++){
 function drawBall(){
     ctx.beginPath();
     ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-    ctx.fillStyle = '#0095dd';
+    ctx.fillStyle = '#c03333';
     ctx.fill();
     ctx.closePath();
 }
@@ -63,7 +63,7 @@ function drawBall(){
 function drawPaddle(){
     ctx.beginPath();
     ctx.rect(paddle.x, paddle.y, paddle.width, paddle.height);
-    ctx.fillStyle = "#0095dd";
+    ctx.fillStyle = "#c03333";
     ctx.fill();
     ctx.closePath();
 }
@@ -74,7 +74,7 @@ function drawBricks(){
         column.forEach(brick => {
             ctx.beginPath();
             ctx.rect(brick.x, brick.y, brick.width, brick.height);
-            ctx.fillStyle = brick.visible ? "#0095dd" : "transparent"
+            ctx.fillStyle = brick.visible ? "#c03333" : "transparent"
             ctx.fill();
             ctx.closePath();
         })
